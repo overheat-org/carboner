@@ -9,6 +9,13 @@ const id = {
 
 const methodsMap = {
 	Get: "get",
+	Head: "head",
+	Post: "post",
+	Put: "put",
+	Delete: "delete",
+	Connect: "connect",
+	Trace: "trace",
+	Patch: "patch"
 }
 
 export function HTTP(this: Transformer, path: NodePath<T.Decorator>) {
