@@ -1,7 +1,9 @@
 import { Controller } from './controller';
+import Injectable from './injectable';
 import { HTTP } from './http';
 
 export default { 
+	Injectable,
 	Controller,
 	Get: HTTP,
 	Head: HTTP,
