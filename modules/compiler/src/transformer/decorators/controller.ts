@@ -57,5 +57,5 @@ export function Controller(this: Transformer, path: NodePath<T.Decorator>) {
         default: throw new CarbonerSyntaxError(ErrorCodes.ShouldBeInGlobal, 'Controllers');
     }
 	
-	this.queueServerInjection();
+	this.queueServerInjection(className);
 }

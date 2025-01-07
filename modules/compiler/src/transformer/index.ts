@@ -29,7 +29,12 @@ class Transformer {
 
 	private injections = new Array<ServerInjection>;
 	
-	queueServerInjection() {}
+	queueServerInjection(className: string) {
+		this.injections.push({
+			id: className,
+			path: this.currentFilePath
+		});
+	}
 }
 
 export default Transformer;
