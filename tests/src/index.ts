@@ -1,3 +1,5 @@
+import './app.controller';
 import Carboner from '../../modules/core';
 
-Carboner.create("./app.controller");
+const app = Carboner.create();
+app.listen();
